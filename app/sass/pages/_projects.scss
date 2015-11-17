@@ -1,0 +1,31 @@
+.projects {
+	background-color: $orange;
+
+	h3 {
+		display: none;
+	}
+
+	.project-item {
+		display: inline-block;
+		width: 30%;
+		min-width: 250px;
+		margin: 1%;
+		height: 200px;
+		background-color: $white;
+	}
+
+	.aoa {
+		background-image: url('../assets/img/apartments-of-amsterdam.png');
+		background-size: cover;
+	}
+
+	.todo {
+		background-image: url('../assets/img/todo-list.png');
+		background-size: cover;
+	}
+
+	.fairsource {
+		background-image: url('../assets/img/fair-source.png');
+		background-size: cover;
+	}
+}
