@@ -2,30 +2,84 @@
 	background-color: $orange;
 
 	h3 {
-		display: none;
+		color: $white;
+		background-color: $blue;
+		margin: 0px 0px;
+		padding: 10px;
+	}
+
+	p {
+		margin: 10px;
 	}
 
 	.project-item {
+		vertical-align: top;
 		display: inline-block;
 		width: 30%;
-		min-width: 250px;
-		margin: 1%;
-		height: 200px;
+		min-width: 280px;
+		margin: 10px;
+		height: 180px;
 		background-color: $white;
+		border-radius: 10px;
+		box-shadow: 1px 1px 2px $blue;
+		overflow: hidden;
+
+		&:hover .aoa { 
+			opacity: 1; 
+		}
 	}
 
 	.aoa {
+		opacity: 0;
+		position: relative;
+		height: 100%;
+		width: 100%;
 		background-image: url('../assets/img/apartments-of-amsterdam.png');
 		background-size: cover;
+		background-position: center top;
+		transition: all 1s ease-in-out;
 	}
 
 	.todo {
 		background-image: url('../assets/img/todo-list.png');
 		background-size: cover;
+		background-position: center top;
 	}
 
 	.fairsource {
 		background-image: url('../assets/img/fair-source.png');
 		background-size: cover;
+		background-position: center top;
+	}
+
+	.recruitmentpage {
+		background-image: url('../assets/img/recruitment-page.png');
+		background-size: cover;	
+		background-position: center top;	
+	}
+
+	.kantoren101 {
+		background-image: url('../assets/img/101kantoren.png');
+		background-size: cover;	
+		background-position: center top;	
+	}
+}
+
+@media only screen and (max-width: 1135px) {
+	.projects {
+		height: auto !important;
+
+		.project-item {
+			width: 45%;
+		}
+	}
+}
+
+@media only screen and (max-width: 755px) {
+	.projects {
+		.project-item {
+			width: 100%;
+			margin: 10px 0;
+		}
 	}
 }

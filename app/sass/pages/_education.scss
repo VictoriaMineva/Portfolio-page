@@ -1,3 +1,103 @@
 .education {
 	background-color: $yellow;
+
+	.text {
+		float: right;
+		width: 40%;
+		padding: 0 5%;
+		min-width: 230px;
+		margin-top: 15px;
+		vertical-align: top;
+		text-align: justify;
+	}
+
+	h3 {
+		font-size: 1.7em;
+		margin: 0 0 10px 30px;
+		color: $blue;
+	}
+
+	.timeline-1 {
+		min-width: 230px;
+		display: block;
+		width: 45%;
+		padding-right: 5%;
+		border-left: 5px solid $blue;
+		margin: 50px 0;
+		min-height: 80vh;
+
+		.timeline-item {
+			height: 150px;
+			margin-left: -22px;
+		}
+
+		.timeline-bullet {
+			line-height: 150px;
+			height: 150px;
+			float: left;
+			background-image: url('../assets/img/education-bullet.png');
+		}
+
+		.timeline-text {
+			height: 120px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+		.education {
+			.timeline-item {
+				height: 170px !important;
+			}
+
+			.timeline-bullet {
+				line-height: 170px !important;
+				height: 170px !important;
+			}
+
+			.timeline-text {
+				height: 150px !important;
+			}
+		}
+}
+
+@media only screen and (max-width: 768px) {
+	.education {
+		height: auto;
+
+		.text {
+			float: none !important;
+			width: 100%;
+			padding: 0;
+			margin-top: 0;
+		}
+
+		.content {
+			padding: 120px 0 0 0 !important;
+		}
+
+		.timeline-1 {
+			min-width: 230px;
+			display: block;
+			width: 100%;
+			border-left: 5px solid $blue;
+			margin-top: 50px;
+			min-height: 80vh;
+
+			span {
+				font-size: 12px !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) and (max-height: 736px) {
+	.education {
+		height: auto;
+		margin-bottom: 100px;
+
+		.timeline-1 {
+			padding-bottom: 50px;
+		}
+	}
 }

@@ -1,3 +1,98 @@
-.footer {
+footer {
+	width: 100%;
+	background-color: $blue;
+	text-align: center;
+	height: 95px;
+	line-height: 95px;
+	font-size: 1.5em;
+	border-top: 5px solid $white;
+	
+	span {
+		font-size: 0.6em;
+		color: $white;
+		float: left;
+		padding: 0 25px;
+	}
 
+	ul {
+		list-style: none;
+		float: right;
+		padding: 0 25px;
+		margin: 0;
+		height: 90px;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	.facebook {
+		height: 50px;
+		width: 50px;
+		background-image: url('../assets/img/facebook-icons.png');
+		background-position: left center;
+		background-size: 100px 50px;
+		display: inline-block;
+	}
+
+	.linkedin {
+		height: 50px;
+		width: 50px;
+		background-image: url('../assets/img/linkedin-icons.png');
+		background-position: left center;
+		background-size: 100px 50px;
+		display: inline-block;
+	}
+
+	.github {
+		height: 50px;
+		width: 50px;
+		background-image: url('../assets/img/github-icons.png');
+		background-position: left center;
+		background-size: 100px 50px;
+		display: inline-block;
+	}
+
+	.icon {
+		height: 50px;
+		width: 50px;
+		background-position: left center;
+		background-size: 100px 50px;
+		cursor: pointer;
+		margin: 25px 0 0 0;
+		float: right;
+	}
+
+	.icon:hover {
+		background-position: right center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	footer {
+		span {
+			font-size: 14px !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	footer {
+		height: 155px;
+		line-height: 45px;
+
+		span {
+			margin-top: 25px;
+			line-height: 45px;
+		}
+
+		ul {
+			height: 45px;
+			float: left;
+		}
+
+		.icon {
+			margin: 0;
+		}
+	}
 }

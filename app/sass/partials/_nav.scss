@@ -1,11 +1,18 @@
 nav {
 	a {
+		font-weight: 700;
+		
 		color: $white;
 		text-decoration: none;
 
 		&:hover {
 			color: $light-green;
 		}
+
+	}
+	
+	.active {
+		color: $light-green;
 	}
 }
 

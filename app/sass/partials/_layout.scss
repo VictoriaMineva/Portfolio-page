@@ -20,18 +20,18 @@ header {
 	z-index: 20;
 }
 
+.content {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0 50px 0;
+}
+
 section {
 	height: 100vh;
 	min-height: 748px;
 	width: 80%;
 	padding: 0 10%;
-
-	.content {
-		text-align: center;
-		width: 100%;
-		margin: 0 auto;
-		padding: 100px 0 50px 0;
-	}
 
 	h1 {
 		font-family: Montserrat;
@@ -77,16 +77,6 @@ section {
 		color: $blue;
 		margin: 20px 0 60px 0;
 	}
-}
-
-footer {
-	width: 100%;
-	background-color: $blue;
-	text-align: center;
-	height: 95px;
-	line-height: 95px;
-	font-size: 1.5em;
-	border-top: 5px solid $white;
 }
 
 @media only screen and (max-width: 768px) {

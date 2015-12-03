@@ -1,6 +1,55 @@
 .contact {
 	background-color: $green;
-	max-height: calc(100vh - 100px);
+	max-height: calc(100vh - 200px);
+	min-height: 650px;
+
+	p {
+		width: 90%;
+		text-align: justify;
+		margin: 0 auto;
+		line-height: 1.5em;
+	}
+
+	.icon {
+		height: 40px;
+		width: 50px;
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-position: center center;
+		float: left;
+	}
+
+	.location {
+		background-image: url("../assets/img/location-icon.png");
+		background-size: 31px 40px;
+	}
+
+	.telephone {
+		background-image: url("../assets/img/phone-icon.png");
+		background-size: 29px 40px;
+	}
+
+	.email {
+		background-image: url("../assets/img/email-icon.png");
+		background-size: 31px 26px;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0 0 0 10px;
+		padding: 0;
+		li {
+			display: block;
+			height: 40px;
+			width: 240px;
+			margin: 10px;
+		}
+		.text {
+			display: inline-block;
+			line-height: 45px;
+			float: left;
+		}
+	}
 
 	form {
 		margin-bottom: 50px;
@@ -9,12 +58,18 @@
 	.form-left {
 		width: 40%;
 		display: inline-block;
-		height: 220px;
+		margin: 20px 10px;
+	}
+
+	.form-right {
+		vertical-align: top;
+		width: 40%;
 		min-width: 230px;
+		display: inline-block;
 		margin: 20px 10px;
 
 		label {
-			display: block;
+			display: none;
 			text-align: left;
 			line-height: 30px;
 			margin-left: 10%;
@@ -25,32 +80,47 @@
 			height: 30px;
 			margin-bottom: 20px;
 			border: 1px solid $blue;
+			background-color: $white;
 			border-radius: 5px;
 			padding: 0 10px;
 		}
-	}
 
-	.form-right {
-		vertical-align: top;
-		width: 40%;
-		min-width: 230px;
-		display: inline-block;
-		height: 220px;
-		margin: 20px 10px;
-
-		label {
-			display: block;
-			text-align: left;
-			line-height: 30px;
-			margin-left: 10%;
+		input:focus, textarea:focus{
+			outline: none;
+	    	border-color: $blue;
+	    	box-shadow: 0 0 5px $blue;
 		}
 
 		textarea {
 			width: 90%;
-			height: 174px;
+			height: 120px;
 			border: 1px solid $blue;
 			border-radius: 5px;
 			padding: 10px 10px;
+		}
+
+		::-webkit-input-placeholder {
+		   color: $blue;
+		   opacity: 0.6;
+		   font-style: italic;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $blue; 
+		   opacity: 0.6; 
+		   font-style: italic;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $blue;  
+		   opacity: 0.6;
+		   font-style: italic;
+		}
+
+		:-ms-input-placeholder {  
+		   color: $blue;
+		   opacity: 0.6; 
+		   font-style: italic; 
 		}
 	}
 
@@ -73,16 +143,30 @@
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
 	.contact {
 		max-height: none;
 
+		p {
+			width: 100%;
+		}
+
+		ul {
+			margin: 0;
+
+			li {
+				margin: 10px 0;
+			}
+		}
+
 		.form-left {
-			width: 90%;
+			width: 100%;
+			margin: 0;
 		}
 
 		.form-right {
-			width: 90%;
+			width: 100%;
+			margin: 20px 0;
 		}
 	}
 }

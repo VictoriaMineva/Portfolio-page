@@ -114,42 +114,42 @@
 @media only screen and (max-width: 768px) {
 	.experience {
 		margin-top: -100px;
-	}
 
-	span {
-		font-size: 12px !important;
-	}
+		span {
+			font-size: 12px !important;
+		}
 
-	.timeline-2 {
-	    border-bottom: none !important;
-	    border-radius: 0 0 0 0 !important;
-	}
+		.timeline-2 {
+		    border-bottom: none !important;
+		    border-radius: 0 0 0 0 !important;
+		}
 
-	.timeline-3 {
-	    border-left: 5px solid #203F53;
-	    border-right: none !important;
-	    min-height: 550px !important;
+		.timeline-3 {
+		    border-left: 5px solid #203F53;
+		    border-right: none !important;
+		    min-height: 550px !important;
 
-	    .timeline-3-top {
-	    	display: none;
-	    }
-	}
+		    .timeline-3-top {
+		    	display: none;
+		    }
+		}
 
-	.timeline-item {
-		margin-top: 10px !important;
-	}
+		.timeline-item {
+			margin-top: 10px !important;
+		}
 
-	.timeline-item-left {
-		display: none;
-	}
+		.timeline-item-left {
+			display: none;
+		}
 
-	.timeline-4 {
-	    width: 100% !important;
-	    padding: 0 !important;
-	    margin: 0 !important;
-	}
+		.timeline-4 {
+		    width: 100% !important;
+		    padding: 0 !important;
+		    margin: 0 !important;
+		}
 
-	.hidden {
-		display: block !important;
+		.hidden {
+			display: block !important;
+		}
 	}
 }
