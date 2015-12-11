@@ -155,6 +155,19 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+
+    ftpush: {
+      build: {
+        auth: {
+          host: 'victoriamineva.com',
+          port: 21,
+          authKey: 'key'
+        },
+        src: 'build',
+        dest: '/public_html/testUpload',
+        exclusions: ['build/**/.DS_Store', 'build/**/Thumbs.db', 'dist/tmp']
+      }
     }
   });
 
@@ -169,6 +182,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-ftpush');
+  grunt.loadNpmTasks('grunt-ftp');
 
   // Default task(s).
   grunt.registerTask('default', ['build', 'css', 'js', 'html', 'connect', 'watch']);
@@ -176,4 +191,6 @@ module.exports = function(grunt) {
   grunt.registerTask('js', ['jshint', 'uglify']);
   grunt.registerTask('css', ['sass', 'cssmin']);
   grunt.registerTask('html', ['htmlhint']);
+  grunt.registerTask('upload', ['build', 'css', 'js', 'ftpush']);
+  grunt.registerTask('download', ['ftpGet']);
 };

@@ -28,6 +28,7 @@ node_modules
 *.log
 *.sql
 *.sqlite
+.ftppass
 
 # OS generated files #
 ######################
